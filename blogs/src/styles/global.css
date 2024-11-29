@@ -1,3 +1,131 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap");
+
+:root {
+  --main-bg-color: #e8f5e9; /* Pale Green */
+  --accent-color: #fce4ec; /* Soft Pink */
+  --text-color: #333; /* Dark Gray */
+  --button-color: #81c784; /* Slightly deeper green for contrast */
+  --button-hover: #66bb6a;
+}
+
+body {
+  font-family: "Lora", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Dark Mode */
+
+.dark {
+  --main-bg-color: #333; /* Dark Gray */
+  --accent-color: #555; /* Dark Gray */
+  --text-color: #fff; /* White */
+  --button-color: #555; /* Dark Gray */
+  --button-hover: #777; /* Light Gray */
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+

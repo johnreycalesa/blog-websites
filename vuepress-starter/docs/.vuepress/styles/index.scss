@@ -1,8 +1,0 @@
-// override code block background color
-#app {
-    --code-c-bg: #fff;
-
-    [data-theme="dark"] & {
-        --code-c-bg: #000;
-    }
-}

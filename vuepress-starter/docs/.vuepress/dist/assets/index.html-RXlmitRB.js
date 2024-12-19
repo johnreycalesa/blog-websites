@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as n}from"./app-CSnkMOgj.js";const a={};function o(c,i){return n(),t("div")}const s=e(a,[["render",o],["__file","index.html.vue"]]),_=JSON.parse('{"path":"/guide/configuration/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"guide/configuration/README.md"}');export{s as comp,_ as data};

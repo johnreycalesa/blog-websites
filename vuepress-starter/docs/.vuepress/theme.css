@@ -1,0 +1,27 @@
+/* theme.css */
+:root {
+    --primary-color: #007bff;
+    /* Replace with your desired primary color */
+    --secondary-color: #ffc107;
+    /* Replace with your desired secondary color */
+    --text-color: #212529;
+    /* Replace with your desired text color */
+    /* Add more variables for other colors you want to customize */
+}
+
+/* theme.css */
+.theme-default-content h1,
+.theme-default-content h2,
+.theme-default-content h3 {
+    color: var(--text-color);
+}
+
+.theme-default-content a {
+    color: var(--primary-color);
+}
+
+.theme-default-content a:hover {
+    color: darken(var(--primary-color), 10%);
+}
+
+/* Adjust selectors and styles as needed to customize your theme */
